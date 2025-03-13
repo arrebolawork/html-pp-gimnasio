@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Arrebola Porras</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      font-family: "Comic Sans MS";
+      font-size: larger;
+    }
+    header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+    header nav {
+      background-color: lightgrey;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    header nav a {
+      text-decoration: none;
+      padding: 2rem;
+      transition: 0.3s;
+      color: black;
+    }
+    header nav a[href="#"] {
+      background-color: rgb(204, 204, 204);
+      text-decoration: underline;
+      font-weight: bolder;
+    }
+
+    header nav a:hover {
+      background-color: rgb(204, 204, 204);
+      transition: 0.3s;
+    }
+    img {
+      width: 480px;
+    }
+    video {
+      max-width: 480px;
+    }
+    .alineacion {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    article {
+      margin: 4rem;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Gatitos</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#"> Gatitos </a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 id="Imagenes">Imágenes</h2>
+        <nav>
+          <a href="#Videos">Videos</a>
+          <a href="#Audios">Audios</a>
+        </nav>
+        <article>
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2024/03/08/09/47/ai-generated-8620359_960_720.png" alt="Gato blanco entre flores" />
+            <figcaption>Los Gatos en la Naturaleza</figcaption>
+          </figure>
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2024/03/08/09/55/cat-8620369_1280.png" alt="Gato durmiendo entre mantas" />
+            <figcaption>Alerta sin descanso!</figcaption>
+          </figure>
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2024/06/10/05/11/ai-generated-8819910_640.jpg" alt="Gato negro con fondo de galaxia" />
+            <figcaption>Gato cósmico, tranquilo Houston</figcaption>
+          </figure>
+        </article>
+      </section>
+      <section>
+        <h2 id="Videos">Video</h2>
+        <nav>
+          <a href="#Imagenes">Imágenes</a>
+          <a href="#Audios">Audios</a>
+        </nav>
+        <article>
+          <video controls>
+            <source src="https://media.istockphoto.com/id/104490865/es/v%C3%ADdeo/baile-mascota.mp4?s=mp4-640x640-is&k=20&c=fvwGzgdxrJFCn4aorw5X_1pFMLf7SS5KBFnO2Ew6Y2w=" type="video/mp4" />
+          </video>
+          <video controls>
+            <source src="https://cdn.pixabay.com/video/2020/05/13/39009-420224623_tiny.mp4" type="video/mp4" />
+          </video>
+          <video controls>
+            <source
+              src="https://media.istockphoto.com/id/1307796255/es/v%C3%ADdeo/hombre-maduro-bailando-y-sosteniendo-gato-en-casa-durante-videollamada-punto-de-vista-webcam.mp4?s=mp4-640x640-is&k=20&c=A1F9pVSPSNYEIRSj26Dc916yajUm_ud0iHxrzQFtHcw="
+              type="video/mp4" />
+          </video>
+        </article>
+      </section>
+      <section>
+        <h2 id="Audios">Audios</h2>
+        <nav>
+          <a href="#Imagenes">Imágenes</a>
+          <a href="#Videos">Videos</a>
+        </nav>
+        <article class="alineacion">
+          <audio controls>
+            <source src="./sound-effect-cat-chirruping-and-meowing-282904.mp3" type="audio/mp3" />
+          </audio>
+          <audio controls>
+            <source src="./sound-effect-cat-chirruping-and-meowing-282902.mp3" type="audio/mp3" />
+          </audio>
+          <audio controls>
+            <source src="./sound-effect-cat-growling-spitting-and-meowing-282905.mp3" type="audio/mp3" />
+          </audio>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
